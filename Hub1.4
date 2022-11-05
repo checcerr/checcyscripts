@@ -1,0 +1,2093 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local VaultHub = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextFrame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Name = Instance.new("TextLabel")
+local TabButton = Instance.new("TextButton")
+local Close = Instance.new("ImageButton")
+local Glow = Instance.new("ImageLabel")
+local HomeTab = Instance.new("Folder")
+local HomeText = Instance.new("TextLabel")
+local Credits = Instance.new("TextLabel")
+local Ver = Instance.new("TextLabel")
+local Welcome = Instance.new("TextLabel")
+local Tabs = Instance.new("Folder")
+local TabsFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Blue = Instance.new("UIGradient")
+local Green = Instance.new("UIGradient")
+local Red = Instance.new("UIGradient")
+local HomeTab_2 = Instance.new("TextButton")
+local LocalPlayer = Instance.new("TextButton")
+local ChatScripts = Instance.new("TextButton")
+local ChatLogger = Instance.new("TextButton")
+local LocalMusicPlayer = Instance.new("TextButton")
+local Teleports = Instance.new("TextButton")
+local Settings = Instance.new("TextButton")
+local Blue_2 = Instance.new("UIGradient")
+local Green_2 = Instance.new("UIGradient")
+local Red_2 = Instance.new("UIGradient")
+local ChatScripts_2 = Instance.new("Folder")
+local Fire = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local BTool = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+local Door = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TP = Instance.new("Folder")
+local AdminPanel = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local DescText = Instance.new("TextLabel")
+local Couch = Instance.new("ImageButton")
+local UICorner_7 = Instance.new("UICorner")
+local DescText_2 = Instance.new("TextLabel")
+local SecretRoom = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+local DescText_3 = Instance.new("TextLabel")
+local Spawn = Instance.new("ImageButton")
+local UICorner_9 = Instance.new("UICorner")
+local DescText_4 = Instance.new("TextLabel")
+local Vault = Instance.new("ImageButton")
+local UICorner_10 = Instance.new("UICorner")
+local DescText_5 = Instance.new("TextLabel")
+local WeirdRoom = Instance.new("ImageButton")
+local UICorner_11 = Instance.new("UICorner")
+local DescText_6 = Instance.new("TextLabel")
+local WhiteRoom = Instance.new("ImageButton")
+local UICorner_12 = Instance.new("UICorner")
+local DescText_7 = Instance.new("TextLabel")
+local DeskText = Instance.new("TextLabel")
+local LP = Instance.new("Folder")
+local FullBright = Instance.new("ImageButton")
+local UICorner_13 = Instance.new("UICorner")
+local DescText_8 = Instance.new("TextLabel")
+local WalkspeedTextBox = Instance.new("TextBox")
+local UICorner_14 = Instance.new("UICorner")
+local JumppowerTextBox = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
+local WSSpeed = Instance.new("TextLabel")
+local JPSpeed = Instance.new("TextLabel")
+local Loading = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local Blue_3 = Instance.new("UIGradient")
+local LoadingFrame = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local Text = Instance.new("TextLabel")
+local LoadText = Instance.new("TextLabel")
+local Red_3 = Instance.new("UIGradient")
+local Green_3 = Instance.new("UIGradient")
+
+--Properties:
+
+VaultHub.Name = "VaultHub"
+VaultHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+VaultHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+VaultHub.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = VaultHub
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.Position = UDim2.new(0.29136771, 0, 0.281582981, 0)
+MainFrame.Size = UDim2.new(0, 479, 0, 341)
+MainFrame.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = MainFrame
+
+TextFrame.Name = "TextFrame"
+TextFrame.Parent = MainFrame
+TextFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextFrame.BorderSizePixel = 0
+TextFrame.Size = UDim2.new(1, 0, 0.0598241128, 0)
+TextFrame.ZIndex = 5
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 179, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(127, 101, 255))}
+UIGradient.Parent = TextFrame
+
+Name.Name = "Name"
+Name.Parent = TextFrame
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Size = UDim2.new(0.219206676, 0, 1, 0)
+Name.Font = Enum.Font.FredokaOne
+Name.Text = "Vault 8166 Hub"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+TabButton.Name = "TabButton"
+TabButton.Parent = TextFrame
+TabButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabButton.BackgroundTransparency = 1.000
+TabButton.Position = UDim2.new(0.885177433, 0, 0, 0)
+TabButton.Size = UDim2.new(0.0417536534, 0, 0.999999881, 0)
+TabButton.Font = Enum.Font.Roboto
+TabButton.Text = "<"
+TabButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TabButton.TextSize = 32.000
+TabButton.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = TextFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.949999988, 0, 0.100000001, 0)
+Close.Size = UDim2.new(0.0340000018, 0, 0.800000012, 0)
+Close.Image = "http://www.roblox.com/asset/?id=6755657357"
+Close.ImageColor3 = Color3.fromRGB(255, 0, 0)
+
+Glow.Name = "Glow"
+Glow.Parent = TextFrame
+Glow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Glow.BackgroundTransparency = 1.000
+Glow.Position = UDim2.new(0.926931083, 0, -0.294117332, 0)
+Glow.Size = UDim2.new(0.0855949968, 0, 1.58921492, 0)
+Glow.ZIndex = 0
+Glow.Image = "http://www.roblox.com/asset/?id=6430908053"
+Glow.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Glow.ImageTransparency = 0.700
+
+HomeTab.Name = "HomeTab"
+HomeTab.Parent = MainFrame
+
+HomeText.Name = "HomeText"
+HomeText.Parent = HomeTab
+HomeText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeText.BackgroundTransparency = 1.000
+HomeText.Position = UDim2.new(0.258872628, 0, 0.0586510301, 0)
+HomeText.Size = UDim2.new(0.701461375, 0, 0.149560124, 0)
+HomeText.Font = Enum.Font.Ubuntu
+HomeText.Text = "Home"
+HomeText.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeText.TextScaled = true
+HomeText.TextSize = 14.000
+HomeText.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = HomeTab
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.219206676, 0, 0.829912066, 0)
+Credits.Size = UDim2.new(0, 374, 0, 51)
+Credits.Font = Enum.Font.FredokaOne
+Credits.Text = "Hub by checcerr"
+Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+Ver.Name = "Ver"
+Ver.Parent = HomeTab
+Ver.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ver.BackgroundTransparency = 1.000
+Ver.Position = UDim2.new(0.724425912, 0, 0.812316716, 0)
+Ver.Size = UDim2.new(0, 138, 0, 24)
+Ver.Font = Enum.Font.Sarpanch
+Ver.Text = "Alpha 1.4"
+Ver.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ver.TextScaled = true
+Ver.TextSize = 14.000
+Ver.TextWrapped = true
+
+Welcome.Name = "Welcome"
+Welcome.Parent = HomeTab
+Welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.BackgroundTransparency = 1.000
+Welcome.Position = UDim2.new(0.258872628, 0, 0.208211124, 0)
+Welcome.Size = UDim2.new(0.701461375, 0, 0.149560124, 0)
+Welcome.Font = Enum.Font.Ubuntu
+Welcome.Text = "Welcome!"
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+Tabs.Name = "Tabs"
+Tabs.Parent = MainFrame
+
+TabsFrame.Name = "TabsFrame"
+TabsFrame.Parent = Tabs
+TabsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabsFrame.BorderSizePixel = 0
+TabsFrame.Position = UDim2.new(0, 0, 0.0410557203, 0)
+TabsFrame.Size = UDim2.new(0, 105, 0, 327)
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = TabsFrame
+
+Blue.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(20, 153, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(89, 23, 255))}
+Blue.Rotation = -90
+Blue.Name = "Blue"
+Blue.Parent = TabsFrame
+
+Green.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 119))}
+Green.Rotation = -90
+Green.Name = "Green"
+Green.Parent = TabsFrame
+
+Red.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 72, 0))}
+Red.Rotation = -90
+Red.Name = "Red"
+Red.Parent = TabsFrame
+
+HomeTab_2.Name = "HomeTab"
+HomeTab_2.Parent = TabsFrame
+HomeTab_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeTab_2.BackgroundTransparency = 1.000
+HomeTab_2.BorderSizePixel = 0
+HomeTab_2.Position = UDim2.new(-0.00952380989, 0, 0.0183486249, 0)
+HomeTab_2.Size = UDim2.new(1, 0, 0.0978593305, 0)
+HomeTab_2.Font = Enum.Font.FredokaOne
+HomeTab_2.Text = "Home"
+HomeTab_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeTab_2.TextScaled = true
+HomeTab_2.TextSize = 14.000
+HomeTab_2.TextWrapped = true
+
+LocalPlayer.Name = "LocalPlayer"
+LocalPlayer.Parent = TabsFrame
+LocalPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayer.BackgroundTransparency = 1.000
+LocalPlayer.BorderSizePixel = 0
+LocalPlayer.Position = UDim2.new(0.00952380989, 0, 0.348623842, 0)
+LocalPlayer.Size = UDim2.new(1, 0, 0.0978593305, 0)
+LocalPlayer.Font = Enum.Font.FredokaOne
+LocalPlayer.Text = "LocalPlayer"
+LocalPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocalPlayer.TextScaled = true
+LocalPlayer.TextSize = 14.000
+LocalPlayer.TextWrapped = true
+
+ChatScripts.Name = "ChatScripts"
+ChatScripts.Parent = TabsFrame
+ChatScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChatScripts.BackgroundTransparency = 1.000
+ChatScripts.BorderSizePixel = 0
+ChatScripts.Position = UDim2.new(0.00952380989, 0, 0.152905196, 0)
+ChatScripts.Size = UDim2.new(1, 0, 0.0978593305, 0)
+ChatScripts.Font = Enum.Font.FredokaOne
+ChatScripts.Text = "Chat Scripts"
+ChatScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatScripts.TextScaled = true
+ChatScripts.TextSize = 14.000
+ChatScripts.TextWrapped = true
+
+ChatLogger.Name = "ChatLogger"
+ChatLogger.Parent = TabsFrame
+ChatLogger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChatLogger.BackgroundTransparency = 1.000
+ChatLogger.BorderSizePixel = 0
+ChatLogger.Position = UDim2.new(0.00952380989, 0, 0.510703325, 0)
+ChatLogger.Size = UDim2.new(1, 0, 0.0978593305, 0)
+ChatLogger.Font = Enum.Font.FredokaOne
+ChatLogger.Text = "Chat Logger"
+ChatLogger.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChatLogger.TextScaled = true
+ChatLogger.TextSize = 14.000
+ChatLogger.TextTransparency = 0.900
+ChatLogger.TextWrapped = true
+
+LocalMusicPlayer.Name = "Local Music Player"
+LocalMusicPlayer.Parent = TabsFrame
+LocalMusicPlayer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LocalMusicPlayer.BackgroundTransparency = 1.000
+LocalMusicPlayer.BorderSizePixel = 0
+LocalMusicPlayer.Position = UDim2.new(0, 0, 0.608562648, 0)
+LocalMusicPlayer.Size = UDim2.new(1, 0, 0.0978593305, 0)
+LocalMusicPlayer.Font = Enum.Font.FredokaOne
+LocalMusicPlayer.Text = "Music Player"
+LocalMusicPlayer.TextColor3 = Color3.fromRGB(255, 255, 255)
+LocalMusicPlayer.TextScaled = true
+LocalMusicPlayer.TextSize = 14.000
+LocalMusicPlayer.TextTransparency = 0.900
+LocalMusicPlayer.TextWrapped = true
+
+Teleports.Name = "Teleports"
+Teleports.Parent = TabsFrame
+Teleports.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.BackgroundTransparency = 1.000
+Teleports.BorderSizePixel = 0
+Teleports.Position = UDim2.new(0, 0, 0.250764519, 0)
+Teleports.Size = UDim2.new(1, 0, 0.0978593305, 0)
+Teleports.Font = Enum.Font.FredokaOne
+Teleports.Text = "Teleports"
+Teleports.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleports.TextScaled = true
+Teleports.TextSize = 14.000
+Teleports.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = TabsFrame
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.00952380989, 0, 0.877675772, 0)
+Settings.Size = UDim2.new(1, 0, 0.0978593305, 0)
+Settings.Font = Enum.Font.FredokaOne
+Settings.Text = "Settings"
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextScaled = true
+Settings.TextSize = 14.000
+Settings.TextWrapped = true
+
+Blue_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(8, 0, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(53, 201, 255))}
+Blue_2.Rotation = 90
+Blue_2.Name = "Blue"
+Blue_2.Parent = MainFrame
+
+Green_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67, 250, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 149))}
+Green_2.Name = "Green"
+Green_2.Parent = MainFrame
+
+Red_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(250, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 157))}
+Red_2.Name = "Red"
+Red_2.Parent = MainFrame
+
+ChatScripts_2.Name = "ChatScripts"
+ChatScripts_2.Parent = MainFrame
+
+Fire.Name = "Fire"
+Fire.Parent = ChatScripts_2
+Fire.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fire.Position = UDim2.new(0.296450913, 0, 0.11730206, 0)
+Fire.Size = UDim2.new(0.167014629, 0, 0.231671557, 0)
+Fire.Visible = false
+Fire.Image = "rbxassetid://11443299450"
+Fire.ScaleType = Enum.ScaleType.Crop
+
+UICorner_3.Parent = Fire
+
+BTool.Name = "BTool"
+BTool.Parent = ChatScripts_2
+BTool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BTool.Position = UDim2.new(0.540709794, 0, 0.11730206, 0)
+BTool.Size = UDim2.new(0.167014629, 0, 0.231671557, 0)
+BTool.Visible = false
+BTool.Image = "rbxassetid://11443885710"
+BTool.ScaleType = Enum.ScaleType.Crop
+
+UICorner_4.Parent = BTool
+
+Door.Name = "Door"
+Door.Parent = ChatScripts_2
+Door.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Door.Position = UDim2.new(0.782881021, 0, 0.11730206, 0)
+Door.Size = UDim2.new(0.167014629, 0, 0.231671557, 0)
+Door.Visible = false
+Door.Image = "rbxassetid://11443901556"
+Door.ScaleType = Enum.ScaleType.Crop
+
+UICorner_5.Parent = Door
+
+TextLabel.Parent = ChatScripts_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.217118993, 0, 0.785923779, 0)
+TextLabel.Size = UDim2.new(0.782881021, 0, 0.214076251, 0)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.RobotoMono
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 1.000
+TextLabel.TextTransparency = 1.000
+TextLabel.TextWrapped = true
+
+TP.Name = "TP"
+TP.Parent = MainFrame
+
+AdminPanel.Name = "AdminPanel"
+AdminPanel.Parent = TP
+AdminPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminPanel.Position = UDim2.new(0.80840385, 0, 0.0762463212, 0)
+AdminPanel.Size = UDim2.new(0.175596237, 0, 0.2447761, 0)
+AdminPanel.Visible = false
+AdminPanel.ZIndex = 0
+AdminPanel.Image = "rbxassetid://11449255084"
+AdminPanel.ScaleType = Enum.ScaleType.Crop
+
+UICorner_6.Parent = AdminPanel
+
+DescText.Name = "DescText"
+DescText.Parent = AdminPanel
+DescText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText.BackgroundTransparency = 1.000
+DescText.Position = UDim2.new(0, 0, 0.99999994, 0)
+DescText.Size = UDim2.new(1, 0, 0.397065371, 0)
+DescText.ZIndex = 15
+DescText.Font = Enum.Font.Arcade
+DescText.Text = "Teleport to the Admin Panel"
+DescText.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText.TextScaled = true
+DescText.TextSize = 14.000
+DescText.TextTransparency = 1.000
+DescText.TextWrapped = true
+
+Couch.Name = "Couch"
+Couch.Parent = TP
+Couch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Couch.Position = UDim2.new(0.237716064, 0, 0.35796985, 0)
+Couch.Size = UDim2.new(0.185726851, 0, 0.266663551, 0)
+Couch.Visible = false
+Couch.ZIndex = 0
+Couch.Image = "rbxassetid://11449269190"
+Couch.ScaleType = Enum.ScaleType.Crop
+
+UICorner_7.Parent = Couch
+
+DescText_2.Name = "DescText"
+DescText_2.Parent = Couch
+DescText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText_2.BackgroundTransparency = 1.000
+DescText_2.Position = UDim2.new(-0.182253823, 0, 1, 0)
+DescText_2.Size = UDim2.new(1.46391881, 0, 0.719099402, 0)
+DescText_2.ZIndex = 15
+DescText_2.Font = Enum.Font.Arcade
+DescText_2.Text = "Teleport to the Couch"
+DescText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText_2.TextScaled = true
+DescText_2.TextSize = 14.000
+DescText_2.TextTransparency = 1.000
+DescText_2.TextWrapped = true
+
+SecretRoom.Name = "SecretRoom"
+SecretRoom.Parent = TP
+SecretRoom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SecretRoom.Position = UDim2.new(0.237716064, 0, 0.66568917, 0)
+SecretRoom.Size = UDim2.new(0.185726851, 0, 0.266862154, 0)
+SecretRoom.Visible = false
+SecretRoom.ZIndex = 0
+SecretRoom.Image = "rbxassetid://11451640004"
+SecretRoom.ScaleType = Enum.ScaleType.Crop
+
+UICorner_8.Parent = SecretRoom
+
+DescText_3.Name = "DescText"
+DescText_3.Parent = SecretRoom
+DescText_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText_3.BackgroundTransparency = 1.000
+DescText_3.Position = UDim2.new(-0.182253823, 0, 1, 0)
+DescText_3.Size = UDim2.new(1.46391881, 0, 0.719099402, 0)
+DescText_3.ZIndex = 15
+DescText_3.Font = Enum.Font.Arcade
+DescText_3.Text = "Teleport to the Secret Room"
+DescText_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText_3.TextScaled = true
+DescText_3.TextSize = 14.000
+DescText_3.TextTransparency = 1.000
+DescText_3.TextWrapped = true
+
+Spawn.Name = "Spawn"
+Spawn.Parent = TP
+Spawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spawn.Position = UDim2.new(0.237716064, 0, 0.0762463212, 0)
+Spawn.Size = UDim2.new(0.175596237, 0, 0.2447761, 0)
+Spawn.Visible = false
+Spawn.ZIndex = 0
+Spawn.Image = "rbxassetid://11449235663"
+Spawn.ScaleType = Enum.ScaleType.Crop
+
+UICorner_9.Parent = Spawn
+
+DescText_4.Name = "DescText"
+DescText_4.Parent = Spawn
+DescText_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText_4.BackgroundTransparency = 1.000
+DescText_4.Position = UDim2.new(0, 0, 0.99999994, 0)
+DescText_4.Size = UDim2.new(1, 0, 0.397065371, 0)
+DescText_4.ZIndex = 15
+DescText_4.Font = Enum.Font.Arcade
+DescText_4.Text = "Teleport to Spawn"
+DescText_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText_4.TextScaled = true
+DescText_4.TextSize = 14.000
+DescText_4.TextTransparency = 1.000
+DescText_4.TextWrapped = true
+
+Vault.Name = "Vault"
+Vault.Parent = TP
+Vault.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Vault.Position = UDim2.new(0.513213217, 0, 0.35796985, 0)
+Vault.Size = UDim2.new(0.1888199, 0, 0.266663551, 0)
+Vault.Visible = false
+Vault.ZIndex = 0
+Vault.Image = "rbxassetid://11449292092"
+Vault.ScaleType = Enum.ScaleType.Crop
+
+UICorner_10.Parent = Vault
+
+DescText_5.Name = "DescText"
+DescText_5.Parent = Vault
+DescText_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText_5.BackgroundTransparency = 1.000
+DescText_5.Position = UDim2.new(-0.182253823, 0, 1, 0)
+DescText_5.Size = UDim2.new(1.46391881, 0, 0.719099402, 0)
+DescText_5.ZIndex = 15
+DescText_5.Font = Enum.Font.Arcade
+DescText_5.Text = "Teleport to the Vault"
+DescText_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText_5.TextScaled = true
+DescText_5.TextSize = 14.000
+DescText_5.TextTransparency = 1.000
+DescText_5.TextWrapped = true
+
+WeirdRoom.Name = "WeirdRoom"
+WeirdRoom.Parent = TP
+WeirdRoom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WeirdRoom.Position = UDim2.new(0.80840385, 0, 0.35796985, 0)
+WeirdRoom.Size = UDim2.new(0.175596237, 0, 0.266663551, 0)
+WeirdRoom.Visible = false
+WeirdRoom.ZIndex = 0
+WeirdRoom.Image = "rbxassetid://11451630455"
+WeirdRoom.ScaleType = Enum.ScaleType.Crop
+
+UICorner_11.Parent = WeirdRoom
+
+DescText_6.Name = "DescText"
+DescText_6.Parent = WeirdRoom
+DescText_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText_6.BackgroundTransparency = 1.000
+DescText_6.Position = UDim2.new(-0.182253823, 0, 1, 0)
+DescText_6.Size = UDim2.new(1.46391881, 0, 0.719099402, 0)
+DescText_6.ZIndex = 15
+DescText_6.Font = Enum.Font.Arcade
+DescText_6.Text = "Teleport to the Weird Room"
+DescText_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText_6.TextScaled = true
+DescText_6.TextSize = 14.000
+DescText_6.TextTransparency = 1.000
+DescText_6.TextWrapped = true
+
+WhiteRoom.Name = "WhiteRoom"
+WhiteRoom.Parent = TP
+WhiteRoom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WhiteRoom.Position = UDim2.new(0.526436806, 0, 0.0762463212, 0)
+WhiteRoom.Size = UDim2.new(0.175596237, 0, 0.2447761, 0)
+WhiteRoom.Visible = false
+WhiteRoom.ZIndex = 0
+WhiteRoom.Image = "rbxassetid://11449246497"
+WhiteRoom.ScaleType = Enum.ScaleType.Crop
+
+UICorner_12.Parent = WhiteRoom
+
+DescText_7.Name = "DescText"
+DescText_7.Parent = WhiteRoom
+DescText_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText_7.BackgroundTransparency = 1.000
+DescText_7.Position = UDim2.new(0, 0, 0.99999994, 0)
+DescText_7.Size = UDim2.new(1, 0, 0.397065371, 0)
+DescText_7.ZIndex = 15
+DescText_7.Font = Enum.Font.Arcade
+DescText_7.Text = "Teleport to the White Room"
+DescText_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText_7.TextScaled = true
+DescText_7.TextSize = 14.000
+DescText_7.TextTransparency = 1.000
+DescText_7.TextWrapped = true
+
+DeskText.Name = "DeskText"
+DeskText.Parent = TP
+DeskText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DeskText.BackgroundTransparency = 1.000
+DeskText.Position = UDim2.new(0.467640847, 0, 0.66568917, 0)
+DeskText.Size = UDim2.new(0, 247, 0, 91)
+DeskText.Visible = false
+DeskText.Font = Enum.Font.FredokaOne
+DeskText.Text = "DeskText"
+DeskText.TextColor3 = Color3.fromRGB(255, 255, 255)
+DeskText.TextScaled = true
+DeskText.TextSize = 14.000
+DeskText.TextWrapped = true
+
+LP.Name = "LP"
+LP.Parent = MainFrame
+
+FullBright.Name = "FullBright"
+FullBright.Parent = LP
+FullBright.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FullBright.BackgroundTransparency = 0.800
+FullBright.Position = UDim2.new(0.247365341, 0, 0.278905183, 0)
+FullBright.Size = UDim2.new(0, 100, 0, 100)
+FullBright.Visible = false
+FullBright.Image = "http://www.roblox.com/asset/?id=4945216162"
+
+UICorner_13.Parent = FullBright
+
+DescText_8.Name = "DescText"
+DescText_8.Parent = LP
+DescText_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescText_8.BackgroundTransparency = 1.000
+DescText_8.Position = UDim2.new(0.215031445, 0, 0.075707078, 0)
+DescText_8.Size = UDim2.new(0.783924401, 0, 0.190968066, 0)
+DescText_8.Visible = false
+DescText_8.ZIndex = 999
+DescText_8.Font = Enum.Font.FredokaOne
+DescText_8.Text = "Toggle Fullbright"
+DescText_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+DescText_8.TextScaled = true
+DescText_8.TextSize = 14.000
+DescText_8.TextTransparency = 1.000
+DescText_8.TextWrapped = true
+
+WalkspeedTextBox.Name = "WalkspeedTextBox"
+WalkspeedTextBox.Parent = LP
+WalkspeedTextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedTextBox.BackgroundTransparency = 0.800
+WalkspeedTextBox.Position = UDim2.new(0.2849437, 0, 0.799706757, 0)
+WalkspeedTextBox.Size = UDim2.new(0.250262231, 0, 0.176813349, 0)
+WalkspeedTextBox.Visible = false
+WalkspeedTextBox.ClearTextOnFocus = false
+WalkspeedTextBox.Font = Enum.Font.Unknown
+WalkspeedTextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedTextBox.Text = "16"
+WalkspeedTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+WalkspeedTextBox.TextScaled = true
+WalkspeedTextBox.TextSize = 14.000
+WalkspeedTextBox.TextWrapped = true
+
+UICorner_14.Parent = WalkspeedTextBox
+
+JumppowerTextBox.Name = "JumppowerTextBox"
+JumppowerTextBox.Parent = LP
+JumppowerTextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumppowerTextBox.BackgroundTransparency = 0.800
+JumppowerTextBox.Position = UDim2.new(0.68401742, 0, 0.799706757, 0)
+JumppowerTextBox.Size = UDim2.new(0.250262231, 0, 0.176813349, 0)
+JumppowerTextBox.Visible = false
+JumppowerTextBox.ClearTextOnFocus = false
+JumppowerTextBox.Font = Enum.Font.Unknown
+JumppowerTextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+JumppowerTextBox.Text = "50"
+JumppowerTextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumppowerTextBox.TextScaled = true
+JumppowerTextBox.TextSize = 14.000
+JumppowerTextBox.TextWrapped = true
+
+UICorner_15.Parent = JumppowerTextBox
+
+WSSpeed.Name = "WS Speed"
+WSSpeed.Parent = LP
+WSSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WSSpeed.BackgroundTransparency = 1.000
+WSSpeed.Position = UDim2.new(0.240083501, 0, 0.624633431, 0)
+WSSpeed.Size = UDim2.new(0.343148828, 0, 0.169208154, 0)
+WSSpeed.Visible = false
+WSSpeed.Font = Enum.Font.FredokaOne
+WSSpeed.Text = "WalkSpeed"
+WSSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+WSSpeed.TextScaled = true
+WSSpeed.TextSize = 14.000
+WSSpeed.TextWrapped = true
+
+JPSpeed.Name = "JP Speed"
+JPSpeed.Parent = LP
+JPSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JPSpeed.BackgroundTransparency = 1.000
+JPSpeed.Position = UDim2.new(0.639640331, 0, 0.624633431, 0)
+JPSpeed.Size = UDim2.new(0.343148828, 0, 0.169208154, 0)
+JPSpeed.Visible = false
+JPSpeed.Font = Enum.Font.FredokaOne
+JPSpeed.Text = "JumpPower"
+JPSpeed.TextColor3 = Color3.fromRGB(255, 255, 255)
+JPSpeed.TextScaled = true
+JPSpeed.TextSize = 14.000
+JPSpeed.TextWrapped = true
+
+Loading.Name = "Loading"
+Loading.Parent = VaultHub
+Loading.Active = true
+Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading.Position = UDim2.new(0.28341794, 0, 0.316590577, 0)
+Loading.Size = UDim2.new(0, 512, 0, 241)
+Loading.Visible = false
+
+UICorner_16.CornerRadius = UDim.new(0, 4)
+UICorner_16.Parent = Loading
+
+Blue_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(50, 150, 250)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(94, 14, 255))}
+Blue_3.Name = "Blue"
+Blue_3.Parent = Loading
+
+LoadingFrame.Name = "LoadingFrame"
+LoadingFrame.Parent = Loading
+LoadingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingFrame.Position = UDim2.new(0.048828125, 0, 0.846473038, 0)
+LoadingFrame.Size = UDim2.new(0.90234375, 0, 0.0468879268, 0)
+
+UICorner_17.CornerRadius = UDim.new(0, 20)
+UICorner_17.Parent = LoadingFrame
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 250, 213)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(46, 199, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(250, 150, 150))}
+UIGradient_2.Offset = Vector2.new(-1, 0)
+UIGradient_2.Parent = LoadingFrame
+
+Text.Name = "Text"
+Text.Parent = Loading
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Size = UDim2.new(1, 0, 0.21701245, 0)
+Text.Font = Enum.Font.FredokaOne
+Text.Text = "Vault 8166 Hub"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextScaled = true
+Text.TextSize = 14.000
+Text.TextWrapped = true
+
+LoadText.Name = "LoadText"
+LoadText.Parent = Loading
+LoadText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadText.BackgroundTransparency = 1.000
+LoadText.Position = UDim2.new(0, 0, 0.215767637, 0)
+LoadText.Size = UDim2.new(1, 0, 0.21701245, 0)
+LoadText.Font = Enum.Font.RobotoMono
+LoadText.Text = "Loading..."
+LoadText.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadText.TextScaled = true
+LoadText.TextSize = 14.000
+LoadText.TextWrapped = true
+
+Red_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(250, 0, 4)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 157))}
+Red_3.Name = "Red"
+Red_3.Parent = Loading
+
+Green_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(67, 250, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 149))}
+Green_3.Name = "Green"
+Green_3.Parent = Loading
+
+-- Scripts:
+
+local function WPRBSXU_fake_script() -- TabButton.LocalScript 
+	local script = Instance.new('LocalScript', TabButton)
+
+	local TabsFrame  = script.Parent.Parent.Parent.Tabs.TabsFrame
+	local Button = script.Parent
+	local TweenService = game:GetService("TweenService")
+	
+	local Info = TweenInfo.new(
+		1,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local MoveTween = TweenService:Create(TabsFrame,Info,{Size = UDim2.new(0,0,0,327)})
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 180})
+	
+	local ReverseMove = TweenService:Create(TabsFrame,Info,{Size = UDim2.new(0,105,0,327)})
+	local ReverseButton = TweenService:Create(Button,Info,{Rotation = 0})
+	
+	Button.MouseButton1Click:Connect(function(plr)
+		if TabsFrame.Size ~= UDim2.new(0,0,0,327) then
+			MoveTween:Play()
+			ButtonTween:Play()
+			wait(0.9)
+			TabsFrame.Visible = false
+		else
+			TabsFrame.Visible = true
+			ReverseMove:Play()
+			ReverseButton:Play()
+		end
+	end)
+end
+coroutine.wrap(WPRBSXU_fake_script)()
+local function UWWOW_fake_script() -- HomeText.LocalScript 
+	local script = Instance.new('LocalScript', HomeText)
+
+	while true do
+		wait(1)
+		script.Parent.Text = "Home_"
+		wait(1)
+		script.Parent.Text = "Home"
+	end
+end
+coroutine.wrap(UWWOW_fake_script)()
+local function GZMDPQJ_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	while true do
+		wait(1)
+		script.Parent.Text = "Welcome!_"
+		wait(1)
+		script.Parent.Text = "Welcome!"
+	end
+end
+coroutine.wrap(GZMDPQJ_fake_script)()
+local function LYSK_fake_script() -- TabsFrame.BlueHS 
+	local script = Instance.new('LocalScript', TabsFrame)
+
+	local button = script.Parent
+	local gradient = button.Blue
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(2.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset1 = {Offset = Vector2.new(-1, 0)}
+	local create1 = ts:Create(gradient, ti, offset1)
+	local startPos = Vector2.new(1, 0)
+	local rot = 180
+	
+	gradient.Offset = startPos
+	gradient.Rotation = 0
+	
+	button.MouseEnter:Connect(function()
+		
+		button.BorderSizePixel = 2
+		create1:Play()
+		
+	end)
+	
+	local function completed()
+			
+		if button.BorderSizePixel == 2 and rot == 0 then
+			
+			gradient.Rotation = 180
+			gradient.Offset = startPos
+			create1:Play()	
+			
+		elseif button.BorderSizePixel == 2 and rot == 180 then
+			
+			gradient.Rotation = 0
+			gradient.Offset = startPos
+			create1:Play()
+			
+		end
+			
+	end
+	
+	create1.Completed:Connect(function() 
+		
+		if rot == 0 then rot = 180 elseif rot == 180 then rot = 0 end
+		completed()
+		
+	end)
+	
+	button.MouseLeave:Connect(function()
+		
+		button.BorderSizePixel = 3
+		create1:Pause()
+		
+	end)
+end
+coroutine.wrap(LYSK_fake_script)()
+-- TabsFrame.GreenHS is disabled.
+-- TabsFrame.RedHS is disabled.
+local function QZXCRN_fake_script() -- HomeTab_2.LocalScript 
+	local script = Instance.new('LocalScript', HomeTab_2)
+
+	local Button = script.Parent
+	local MainFrame = Button.Parent.Parent.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		if MainFrame.HomeTab.Credits.Visible == false then
+	-- Home		
+			MainFrame.HomeTab.Credits.Visible = true
+			MainFrame.HomeTab.HomeText.Visible = true
+			MainFrame.HomeTab.Ver.Visible = true
+			MainFrame.HomeTab.Welcome.Visible = true
+			-- LP 
+			MainFrame.LP.FullBright.Visible = false
+			MainFrame.LP.JumppowerTextBox.Visible = false
+			MainFrame.LP.WalkspeedTextBox.Visible = false
+			MainFrame.LP.DescText.Visible = false
+			MainFrame.LP["JP Speed"].Visible = false
+			MainFrame.LP["WS Speed"].Visible = false
+			-- TP
+			MainFrame.TP.AdminPanel.Visible = false
+			MainFrame.TP.Couch.Visible = false
+			MainFrame.TP.SecretRoom.Visible = false
+			MainFrame.TP.Spawn.Visible = false
+			MainFrame.TP.Vault.Visible = false
+			MainFrame.TP.WeirdRoom.Visible = false
+			MainFrame.TP.WhiteRoom.Visible = false
+			MainFrame.TP.DeskText.Visible = false
+			-- Chat
+			MainFrame.ChatScripts.BTool.Visible = false
+			MainFrame.ChatScripts.Fire.Visible = false
+			MainFrame.ChatScripts.Door.Visible = false
+			MainFrame.ChatScripts.TextLabel.Visible = false
+		end
+	end)
+end
+coroutine.wrap(QZXCRN_fake_script)()
+local function DACL_fake_script() -- LocalPlayer.LocalScript 
+	local script = Instance.new('LocalScript', LocalPlayer)
+
+	local Button = script.Parent
+	local MainFrame = Button.Parent.Parent.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		if MainFrame.LP.FullBright.Visible == false then
+	-- Home		
+			MainFrame.HomeTab.Credits.Visible = false
+			MainFrame.HomeTab.HomeText.Visible = false
+			MainFrame.HomeTab.Ver.Visible = false
+			MainFrame.HomeTab.Welcome.Visible = false
+			-- LP 
+			MainFrame.LP.FullBright.Visible = true
+			MainFrame.LP.JumppowerTextBox.Visible = true
+			MainFrame.LP.WalkspeedTextBox.Visible = true
+			MainFrame.LP.DescText.Visible = true
+			MainFrame.LP["JP Speed"].Visible = true
+			MainFrame.LP["WS Speed"].Visible = true
+			-- TP
+			MainFrame.TP.AdminPanel.Visible = false
+			MainFrame.TP.Couch.Visible = false
+			MainFrame.TP.SecretRoom.Visible = false
+			MainFrame.TP.Spawn.Visible = false
+			MainFrame.TP.Vault.Visible = false
+			MainFrame.TP.WeirdRoom.Visible = false
+			MainFrame.TP.WhiteRoom.Visible = false
+			MainFrame.TP.DeskText.Visible = false
+			-- Chat
+			MainFrame.ChatScripts.BTool.Visible = false
+			MainFrame.ChatScripts.Fire.Visible = false
+			MainFrame.ChatScripts.Door.Visible = false
+			MainFrame.ChatScripts.TextLabel.Visible = false
+		end
+	end)
+end
+coroutine.wrap(DACL_fake_script)()
+local function IZJX_fake_script() -- ChatScripts.LocalScript 
+	local script = Instance.new('LocalScript', ChatScripts)
+
+	local Button = script.Parent
+	local MainFrame = Button.Parent.Parent.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		if MainFrame.ChatScripts.Fire.Visible == false then
+	-- Home		
+			MainFrame.HomeTab.Credits.Visible = false
+			MainFrame.HomeTab.HomeText.Visible = false
+			MainFrame.HomeTab.Ver.Visible = false
+			MainFrame.HomeTab.Welcome.Visible = false
+			-- LP 
+			MainFrame.LP.FullBright.Visible = false
+			MainFrame.LP.JumppowerTextBox.Visible = false
+			MainFrame.LP.WalkspeedTextBox.Visible = false
+			MainFrame.LP.DescText.Visible = false
+			MainFrame.LP["JP Speed"].Visible = false
+			MainFrame.LP["WS Speed"].Visible = false
+			-- TP
+			MainFrame.TP.AdminPanel.Visible = false
+			MainFrame.TP.Couch.Visible = false
+			MainFrame.TP.SecretRoom.Visible = false
+			MainFrame.TP.Spawn.Visible = false
+			MainFrame.TP.Vault.Visible = false
+			MainFrame.TP.WeirdRoom.Visible = false
+			MainFrame.TP.WhiteRoom.Visible = false
+			MainFrame.TP.DeskText.Visible = false
+			-- Chat
+			MainFrame.ChatScripts.BTool.Visible = true
+			MainFrame.ChatScripts.Fire.Visible = true
+			MainFrame.ChatScripts.Door.Visible = true
+			MainFrame.ChatScripts.TextLabel.Visible = true
+		end
+	end)
+end
+coroutine.wrap(IZJX_fake_script)()
+local function HLVO_fake_script() -- Teleports.LocalScript 
+	local script = Instance.new('LocalScript', Teleports)
+
+	local Button = script.Parent
+	local MainFrame = Button.Parent.Parent.Parent
+	
+	Button.MouseButton1Click:Connect(function()
+		if MainFrame.TP.Couch.Visible == false then
+	-- Home		
+			MainFrame.HomeTab.Credits.Visible = false
+			MainFrame.HomeTab.HomeText.Visible = false
+			MainFrame.HomeTab.Ver.Visible = false
+			MainFrame.HomeTab.Welcome.Visible = false
+			-- LP 
+			MainFrame.LP.FullBright.Visible = false
+			MainFrame.LP.JumppowerTextBox.Visible = false
+			MainFrame.LP.WalkspeedTextBox.Visible = false
+			MainFrame.LP.DescText.Visible = false
+			MainFrame.LP["JP Speed"].Visible = false
+			MainFrame.LP["WS Speed"].Visible = false
+			-- TP
+			MainFrame.TP.AdminPanel.Visible = true
+			MainFrame.TP.Couch.Visible = true
+			MainFrame.TP.SecretRoom.Visible = true
+			MainFrame.TP.Spawn.Visible = true
+			MainFrame.TP.Vault.Visible = true
+			MainFrame.TP.WeirdRoom.Visible = true
+			MainFrame.TP.WhiteRoom.Visible = true
+			MainFrame.TP.DeskText.Visible = true
+			-- Chat
+			MainFrame.ChatScripts.BTool.Visible = false
+			MainFrame.ChatScripts.Fire.Visible = false
+			MainFrame.ChatScripts.Door.Visible = false
+			MainFrame.ChatScripts.TextLabel.Visible = false
+		end
+	end)
+end
+coroutine.wrap(HLVO_fake_script)()
+local function FSXUTB_fake_script() -- MainFrame.draggable 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(FSXUTB_fake_script)()
+local function XGRT_fake_script() -- MainFrame.BlueHS 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local button = script.Parent
+	local gradient = button.Blue
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(2.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset1 = {Offset = Vector2.new(-1, 0)}
+	local create1 = ts:Create(gradient, ti, offset1)
+	local startPos = Vector2.new(1, 0)
+	local rot = 180
+	
+	gradient.Offset = startPos
+	gradient.Rotation = 0
+	
+	button.MouseEnter:Connect(function()
+		
+		button.BorderSizePixel = 2
+		create1:Play()
+		
+	end)
+	
+	local function completed()
+			
+		if button.BorderSizePixel == 2 and rot == 0 then
+			
+			gradient.Rotation = 180
+			gradient.Offset = startPos
+			create1:Play()	
+			
+		elseif button.BorderSizePixel == 2 and rot == 180 then
+			
+			gradient.Rotation = 0
+			gradient.Offset = startPos
+			create1:Play()
+			
+		end
+			
+	end
+	
+	create1.Completed:Connect(function() 
+		
+		if rot == 0 then rot = 180 elseif rot == 180 then rot = 0 end
+		completed()
+		
+	end)
+	
+	button.MouseLeave:Connect(function()
+		
+		button.BorderSizePixel = 3
+		create1:Pause()
+		
+	end)
+end
+coroutine.wrap(XGRT_fake_script)()
+local function ISAL_fake_script() -- Fire.LocalScript 
+	local script = Instance.new('LocalScript', Fire)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.TextLabel
+	local Button = script.Parent
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Copy the Red Fire script to Clipboard"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		StarterGui:SetCore("SendNotification", {
+			Title = "Copied!";
+			Text = "Red Fire script has been copied to clipboard."
+		})
+		setclipboard('game.8166database:access() end return local lvl2storage=("redfirescript 9.9.2016")')
+		toclipboard('game.8166database:access() end return local lvl2storage=("redfirescript 9.9.2016")')
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(ISAL_fake_script)()
+local function HQKPX_fake_script() -- BTool.LocalScript 
+	local script = Instance.new('LocalScript', BTool)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.TextLabel
+	local Button = script.Parent
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Copy the BTool script to Clipboard"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		StarterGui:SetCore("SendNotification", {
+			Title = "Copied!";
+			Text = "BTool script has been copied to clipboard."
+		})
+		setclipboard('game.8166database:access() end return local lvl3containment1b=("btoolshelper1337")')
+		toclipboard('game.8166database:access() end return local lvl3containment1b=("btoolshelper1337")')
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(HQKPX_fake_script)()
+local function ZYUL_fake_script() -- Door.LocalScript 
+	local script = Instance.new('LocalScript', Door)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.TextLabel
+	local Button = script.Parent
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Copy the Door script to Clipboard"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		StarterGui:SetCore("SendNotification", {
+			Title = "Copied!";
+			Text = "Door script has been copied to clipboard."
+		})
+		setclipboard('game.8166database:access() end return local lvl3containment1b=("dooropen")')
+		toclipboard('game.8166database:access() end return local lvl3containment1b=("dooropen")')
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(ZYUL_fake_script)()
+local function FRYOXX_fake_script() -- AdminPanel.LocalScript 
+	local script = Instance.new('LocalScript', AdminPanel)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DeskText
+	local Button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	
+	local Character = Player.Character
+	
+	local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Go to the Admin Panel"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		HumanoidRootPart.CFrame = CFrame.new(382, 75, 759)
+		StarterGui:SetCore("SendNotification", {
+			Title = "Teleported!";
+			Text = "To the Admin Panel"
+		})
+		ButtonTween:Play()
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(FRYOXX_fake_script)()
+local function SXPZ_fake_script() -- Couch.LocalScript 
+	local script = Instance.new('LocalScript', Couch)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DeskText
+	local Button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	
+	local Character = Player.Character
+	
+	local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Go to the Couch"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		HumanoidRootPart.CFrame = CFrame.new(102, 22, 63)
+		StarterGui:SetCore("SendNotification", {
+			Title = "Teleported!";
+			Text = "To the Couch"
+		})
+		ButtonTween:Play()
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(SXPZ_fake_script)()
+local function RITADY_fake_script() -- SecretRoom.LocalScript 
+	local script = Instance.new('LocalScript', SecretRoom)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DeskText
+	local Button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	
+	local Character = Player.Character
+	
+	local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Go to the Secret Room"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		HumanoidRootPart.CFrame = CFrame.new(246, -15, 13)
+		StarterGui:SetCore("SendNotification", {
+			Title = "Teleported!";
+			Text = "To the Secret Room"
+		})
+		ButtonTween:Play()
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(RITADY_fake_script)()
+local function WRNHAV_fake_script() -- Spawn.LocalScript 
+	local script = Instance.new('LocalScript', Spawn)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DeskText
+	local Button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	
+	local Character = Player.Character
+	
+	local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Go to Spawn"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		HumanoidRootPart.CFrame = CFrame.new(1, 23, 267)
+		StarterGui:SetCore("SendNotification", {
+			Title = "Teleported!";
+			Text = "To Spawn"
+		})
+		ButtonTween:Play()
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(WRNHAV_fake_script)()
+local function KJEX_fake_script() -- Vault.LocalScript 
+	local script = Instance.new('LocalScript', Vault)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DeskText
+	local Button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	
+	local Character = Player.Character
+	
+	local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Go to the Vault"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		HumanoidRootPart.CFrame = CFrame.new(-182, -0, -333)
+		StarterGui:SetCore("SendNotification", {
+			Title = "Teleported!";
+			Text = "To the Vault"
+		})
+		ButtonTween:Play()
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(KJEX_fake_script)()
+local function MVQL_fake_script() -- WeirdRoom.LocalScript 
+	local script = Instance.new('LocalScript', WeirdRoom)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DeskText
+	local Button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	
+	local Character = Player.Character
+	
+	local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Go to the Face Room"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		HumanoidRootPart.CFrame = CFrame.new(2, -3, -120)
+		StarterGui:SetCore("SendNotification", {
+			Title = "Teleported!";
+			Text = "To the Face Room"
+		})
+		ButtonTween:Play()
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(MVQL_fake_script)()
+local function GXCQTG_fake_script() -- WhiteRoom.LocalScript 
+	local script = Instance.new('LocalScript', WhiteRoom)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DeskText
+	local Button = script.Parent
+	
+	local Player = game.Players.LocalPlayer
+	
+	local Character = Player.Character
+	
+	local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Go to the White Room"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		HumanoidRootPart.CFrame = CFrame.new(202, 4, 123)
+		StarterGui:SetCore("SendNotification", {
+			Title = "Teleported!";
+			Text = "To the White Room"
+		})
+		ButtonTween:Play()
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(GXCQTG_fake_script)()
+local function HTZJHV_fake_script() -- FullBright.LocalScript 
+	local script = Instance.new('LocalScript', FullBright)
+
+	local StarterGui = game:GetService("StarterGui")
+	local TweenService = game:GetService("TweenService")
+	local DeskText = script.Parent.Parent.DescText
+	local Button = script.Parent
+	
+	local Info = TweenInfo.new(
+		0.5,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local Info2 = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Rotation = 15, Size = UDim2.new(0.184, 0,0.258, 0)})
+	
+	local ReverseTween = TweenService:Create(Button,Info,{Rotation = 0, Size = UDim2.new(0.167, 0,0.232, 0)})
+	
+	local PressTween = TweenService:Create(Button,Info2,{Size = UDim2.new(0.284,0,0.358,0)})
+	
+	local Text1 = TweenService:Create(DeskText,Info,{TextTransparency = 0})
+	local Text2 = TweenService:Create(DeskText,Info,{TextTransparency = 1})
+	
+	Button.MouseEnter:Connect(function()
+		ButtonTween:Play()
+		Text1:Play()
+		DeskText.Text = "Toggle Fullbright"
+	end)
+	
+	Button.MouseLeave:Connect(function()
+		ReverseTween:Play()
+		Text2:Play()
+	end)
+	
+	Button.MouseButton1Click:Connect(function()
+		if game.Lighting.Ambient == Color3.fromRGB(255,255,255) then
+			StarterGui:SetCore("SendNotification", {
+				Title = "Toggled!";
+				Text = "Fullbright is Off."
+			})
+			game.Lighting.Ambient = Color3.fromRGB(0,0,0)
+		else
+			StarterGui:SetCore("SendNotification", {
+				Title = "Toggled!";
+				Text = "Fullbright is On."
+			})
+			game.Lighting.Ambient = Color3.fromRGB(255,255,255)
+		end
+		PressTween:Play()
+		wait(0.2)
+		ReverseTween:Play()
+	end)
+end
+coroutine.wrap(HTZJHV_fake_script)()
+local function RSKV_fake_script() -- WalkspeedTextBox.LocalScript 
+	local script = Instance.new('LocalScript', WalkspeedTextBox)
+
+	while task.wait() do
+		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = script.Parent.Text
+	end
+end
+coroutine.wrap(RSKV_fake_script)()
+local function ZNSEE_fake_script() -- WalkspeedTextBox.numbers only 
+	local script = Instance.new('LocalScript', WalkspeedTextBox)
+
+	--numbers only
+	--revan
+	--put this in ur texbox
+	TextBox = script.Parent
+	TextBox:GetPropertyChangedSignal("Text"):Connect(function() TextBox.Text = TextBox.Text:gsub('%D+', '')
+	end)
+end
+coroutine.wrap(ZNSEE_fake_script)()
+local function BHXKBP_fake_script() -- JumppowerTextBox.LocalScript 
+	local script = Instance.new('LocalScript', JumppowerTextBox)
+
+	while task.wait() do
+		game.Players.LocalPlayer.Character:WaitForChild("Humanoid").JumpPower = script.Parent.Text
+	end
+end
+coroutine.wrap(BHXKBP_fake_script)()
+local function GGET_fake_script() -- JumppowerTextBox.numbers only 
+	local script = Instance.new('LocalScript', JumppowerTextBox)
+
+	--numbers only
+	--revan
+	--put this in ur texbox
+	TextBox = script.Parent
+	TextBox:GetPropertyChangedSignal("Text"):Connect(function() TextBox.Text = TextBox.Text:gsub('%D+', '')
+	end)
+end
+coroutine.wrap(GGET_fake_script)()
+local function EPYZMN_fake_script() -- VaultHub.LoadingHolder 
+	local script = Instance.new('LocalScript', VaultHub)
+
+	local TweenService = game:GetService("TweenService")
+	local Cam = workspace.CurrentCamera
+	local Blur = Instance.new("BlurEffect",game.Lighting)
+	local Info = TweenInfo.new(
+		1,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local CamTween = TweenService:Create(Cam,Info,{FieldOfView = 40})
+	local BlurTween = TweenService:Create(Blur,Info,{Size = 12})
+	
+	local CamRev  = TweenService:Create(Cam,Info,{FieldOfView = 70})
+	local BlurRev = TweenService:Create(Blur,Info,{Size = 0})
+	
+	while task.wait() do
+		if script.Parent.MainFrame.Visible == false then
+			script.Parent.Loading.Visible = true
+			CamTween:Play()
+			BlurTween:Play()
+			wait(5)
+			CamRev:Play()
+			BlurRev:Play()
+			script.Parent.Loading.Visible = false
+			script.Parent.MainFrame.Visible = true
+			script:Destroy()
+		end
+	end
+end
+coroutine.wrap(EPYZMN_fake_script)()
+local function KXLLAZ_fake_script() -- Loading.BlueHS 
+	local script = Instance.new('LocalScript', Loading)
+
+	local button = script.Parent
+	local gradient = button.Blue
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(2.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset1 = {Offset = Vector2.new(-1, 0)}
+	local create1 = ts:Create(gradient, ti, offset1)
+	local startPos = Vector2.new(1, 0)
+	local rot = 180
+	
+	gradient.Offset = startPos
+	gradient.Rotation = 0
+	
+	button.MouseEnter:Connect(function()
+		
+		button.BorderSizePixel = 2
+		create1:Play()
+		
+	end)
+	
+	local function completed()
+			
+		if button.BorderSizePixel == 2 and rot == 0 then
+			
+			gradient.Rotation = 180
+			gradient.Offset = startPos
+			create1:Play()	
+			
+		elseif button.BorderSizePixel == 2 and rot == 180 then
+			
+			gradient.Rotation = 0
+			gradient.Offset = startPos
+			create1:Play()
+			
+		end
+			
+	end
+	
+	create1.Completed:Connect(function() 
+		
+		if rot == 0 then rot = 180 elseif rot == 180 then rot = 0 end
+		completed()
+		
+	end)
+	
+	button.MouseLeave:Connect(function()
+		
+		button.BorderSizePixel = 3
+		create1:Pause()
+		
+	end)
+end
+coroutine.wrap(KXLLAZ_fake_script)()
+local function RTVXSO_fake_script() -- LoadingFrame.Rainbow 
+	local script = Instance.new('LocalScript', LoadingFrame)
+
+	local button = script.Parent
+	local gradient = button.UIGradient
+	local ts = game:GetService("TweenService")
+	local ti = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+	local offset = {Offset = Vector2.new(1, 0)}
+	local create = ts:Create(gradient, ti, offset)
+	local startingPos = Vector2.new(-1, 0)
+	local list = {}
+	local s, kpt = ColorSequence.new, ColorSequenceKeypoint.new
+	local counter = 0
+	local status = "down"
+	
+	gradient.Offset = startingPos
+	
+	local function rainbowColors()
+		
+		local sat, val = 255, 255
+		
+		for i = 1, 15 do
+			
+			local hue = i * 17
+			table.insert(list, Color3.fromHSV(hue / 255, sat / 255, val / 255))
+			
+		end
+		
+	end
+	
+	rainbowColors()
+	
+	gradient.Color = s({
+	
+		kpt(0, list[#list]),
+		kpt(0.5, list[#list - 1]),
+		kpt(1, list[#list - 2])
+	
+	})
+	
+	counter = #list
+	
+	local function animate()
+		
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 180
+		
+		if counter == #list - 1 and status == "down" then
+			
+			gradient.Color = s({
+		
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[#list]),
+				kpt(1, list[1])
+		
+			})
+			
+			counter = 1
+			status = "up"
+			
+		elseif counter == #list and status == "down" then
+			
+			gradient.Color = s({
+		
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[1]),
+				kpt(1, list[2])
+		
+			})
+		
+			counter = 2
+			status = "up"
+			
+		elseif counter <= #list - 2 and status == "down" then 
+			
+			gradient.Color = s({
+		
+				kpt(0, gradient.Color.Keypoints[1].Value),
+				kpt(0.5, list[counter + 1]),
+				kpt(1, list[counter + 2])
+		
+			})
+			
+			counter = counter + 2
+			status = "up"
+		
+		end
+		
+		create:Play()
+		create.Completed:Wait()
+		gradient.Offset = startingPos
+		gradient.Rotation = 0
+		
+		if counter == #list - 1 and status == "up" then
+			
+			gradient.Color = s({
+			
+				kpt(0, list[1]),
+				kpt(0.5, list[#list]),
+				kpt(1, gradient.Color.Keypoints[3].Value)
+					
+			})
+			
+			counter = 1
+			status = "down"
+			
+		 elseif counter == #list and status == "up" then
+			
+			gradient.Color = s({
+			
+				kpt(0, list[2]),
+				kpt(0.5, list[1]),
+				kpt(1, gradient.Color.Keypoints[3].Value)
+					
+			})
+			
+			counter = 2
+			status = "down"
+		
+		elseif counter <= #list - 2 and status == "up" then
+			
+			gradient.Color = s({
+			
+				kpt(0, list[counter + 2]),
+				kpt(0.5, list[counter + 1]),
+				kpt(1, gradient.Color.Keypoints[3].Value)
+					
+			})
+			
+			counter = counter + 2
+			status = "down"
+		
+		end
+		
+		animate()
+		
+	end
+	
+	animate()
+end
+coroutine.wrap(RTVXSO_fake_script)()
+local function OWDD_fake_script() -- LoadText.LocalScript 
+	local script = Instance.new('LocalScript', LoadText)
+
+	while true do
+		wait(0.3)
+		script.Parent.Text = "Loading"
+		wait(0.3)
+		script.Parent.Text = "Loading."
+		wait(0.3)
+		script.Parent.Text = "Loading.."
+		wait(0.3)
+		script.Parent.Text = "Loading..."
+	end
+end
+coroutine.wrap(OWDD_fake_script)()
+local function DHBPABE_fake_script() -- Loading.draggable 
+	local script = Instance.new('LocalScript', Loading)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(DHBPABE_fake_script)()
+-- Loading.GreenHS is disabled.
+-- Loading.RedHS is disabled.
