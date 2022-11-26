@@ -1,0 +1,112 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Loading = Instance.new("ScreenGui")
+
+--Properties:
+
+Loading.Name = "Loading"
+Loading.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Loading.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+-- Scripts:
+
+local function XXIWTLU_fake_script() -- Loading.LocalScript 
+	local script = Instance.new('LocalScript', Loading)
+
+	local GUI = script.Parent
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Players = game:GetService("Players")
+	local plr = Players.LocalPlayer
+	local Character = plr.Character
+	
+	local Cam = workspace.CurrentCamera
+	local Blur = Instance.new("BlurEffect",game.Lighting)
+	
+	local TweenService = game:GetService("TweenService")
+	local StuffInfo = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	local CamTween = TweenService:Create(Cam,StuffInfo,{FieldOfView = 40})
+	local BlurTween = TweenService:Create(Blur,StuffInfo,{Size = 12})
+	
+	local CamRev  = TweenService:Create(Cam,StuffInfo,{FieldOfView = 70})
+	local BlurRev = TweenService:Create(Blur,StuffInfo,{Size = 0})
+	
+	
+	if GUI.Enabled == true then
+		-- Loading
+		StarterGui:SetCore("SendNotification", {
+			Title = "Loading";
+			Text = "Client Side Dominus by checcerr"
+		})
+		CamTween:Play()
+		BlurTween:Play()
+		wait(0.3)
+		CamRev:Play()
+		BlurRev:Play()
+		
+		--
+		
+		
+		local Player = game.Players.LocalPlayer
+		local Character = Player.Character
+	
+		local Accessory = Instance.new("Accessory",Character)
+		local Handle = Instance.new("Part",Accessory)
+		local HatAttachment = Instance.new("Attachment",Handle)
+		local Mesh = Instance.new("SpecialMesh",Handle)
+		local OriginalSize = Instance.new("Vector3Value",Handle)
+		local AccessoryWeld1 = Instance.new("Weld",Handle)
+		local HeadWeld = Instance.new("Weld",Character.Head)
+		
+		--
+		Accessory.Name = "DeadlyDarkDominus"
+		Handle.Name = "Handle"
+		HatAttachment.Name = "HatAttachment"
+		Mesh.Name = "Mesh"
+		OriginalSize.Name = "OriginalSize"
+		AccessoryWeld1.Name = "AccessoryWeld"
+		HeadWeld.Name = "HeadWeld"
+		--
+		
+		
+		Handle.Size = Vector3.new(1.4, 1.8, 1.8)
+		
+		HeadWeld.Part0 = Character.Head
+		HeadWeld.Part1 = Handle
+		HeadWeld.C1 = CFrame.new(0, 0.6, -0.2)
+		HeadWeld.C0 = CFrame.new(0,0.5,0)
+		
+		AccessoryWeld1.Part0 = Handle
+		
+		Mesh.MeshId = "rbxassetid://162384581"
+		Mesh.TextureId = "rbxassetid://6661867526"
+		Mesh.Scale = Vector3.new(1.04, 1.04, 1.04)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	end
+end
+coroutine.wrap(XXIWTLU_fake_script)()
