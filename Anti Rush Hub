@@ -1,0 +1,522 @@
+-- CREDITS TO LOLCAT!!!!!!! ALL I DID IS THE SEXY GUI AND NOT THE SCRIPTS
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Button = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local ImageLabel = Instance.new("ImageLabel")
+local Sample = Instance.new("ImageLabel")
+local Button_2 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Sample_2 = Instance.new("ImageLabel")
+local FB = Instance.new("TextLabel")
+local FullbrightToggle = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local O = Instance.new("TextLabel")
+local I = Instance.new("TextLabel")
+local Button_3 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIGradient_4 = Instance.new("UIGradient")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Sample_3 = Instance.new("ImageLabel")
+local Window = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local UIGradient_5 = Instance.new("UIGradient")
+local AntiRush = Instance.new("TextLabel")
+local Hub = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.Position = UDim2.new(0.278514594, 0, 0.277448058, 0)
+MainFrame.Size = UDim2.new(0, 500, 0, 300)
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = MainFrame
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(42, 42, 42)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(66, 66, 66))}
+UIGradient.Rotation = -90
+UIGradient.Parent = MainFrame
+
+Button.Name = "Button"
+Button.Parent = MainFrame
+Button.AnchorPoint = Vector2.new(0.5, 0.5)
+Button.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Button.BorderSizePixel = 0
+Button.ClipsDescendants = true
+Button.Position = UDim2.new(0.496116012, 0, 0.430761993, 0)
+Button.Size = UDim2.new(0.971000016, 0, 0.100000001, 0)
+Button.AutoButtonColor = false
+Button.Font = Enum.Font.Code
+Button.Text = "TOGGLE FIGURE POV (Can't disable!)"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextSize = 25.000
+Button.TextStrokeTransparency = 0.000
+Button.TextWrapped = true
+Button.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = Button
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(112, 50, 51)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 133, 135))}
+UIGradient_2.Rotation = -90
+UIGradient_2.Parent = Button
+
+ImageLabel.Parent = Button
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.930913448, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0.0541636236, 0, 1, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=284663799"
+
+Sample.Name = "Sample"
+Sample.Parent = Button
+Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sample.BackgroundTransparency = 1.000
+Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
+Sample.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Sample.ImageTransparency = 0.600
+
+Button_2.Name = "Button"
+Button_2.Parent = MainFrame
+Button_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Button_2.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Button_2.BorderSizePixel = 0
+Button_2.ClipsDescendants = true
+Button_2.Position = UDim2.new(0.500115991, 0, 0.914095342, 0)
+Button_2.Size = UDim2.new(0.971000016, 0, 0.100000001, 0)
+Button_2.AutoButtonColor = false
+Button_2.Font = Enum.Font.Code
+Button_2.Text = "Kill GUI"
+Button_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.TextSize = 25.000
+Button_2.TextStrokeTransparency = 0.000
+Button_2.TextWrapped = true
+Button_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = Button_2
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 88, 112)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(146, 142, 255))}
+UIGradient_3.Rotation = -90
+UIGradient_3.Parent = Button_2
+
+ImageLabel_2.Parent = Button_2
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.930913448, 0, 0, 0)
+ImageLabel_2.Size = UDim2.new(0.0541636236, 0, 1, 0)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=284663799"
+
+Sample_2.Name = "Sample"
+Sample_2.Parent = Button_2
+Sample_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sample_2.BackgroundTransparency = 1.000
+Sample_2.Image = "http://www.roblox.com/asset/?id=4560909609"
+Sample_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Sample_2.ImageTransparency = 0.600
+
+FB.Name = "FB"
+FB.Parent = MainFrame
+FB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FB.BackgroundTransparency = 1.000
+FB.Position = UDim2.new(0, 0, 0.479999989, 0)
+FB.Size = UDim2.new(1, 0, 0.119999997, 0)
+FB.Font = Enum.Font.SourceSans
+FB.Text = "Toggle Fullbright"
+FB.TextColor3 = Color3.fromRGB(255, 255, 255)
+FB.TextScaled = true
+FB.TextSize = 14.000
+FB.TextWrapped = true
+
+FullbrightToggle.Name = "FullbrightToggle"
+FullbrightToggle.Parent = MainFrame
+FullbrightToggle.BackgroundColor3 = Color3.fromRGB(210, 210, 210)
+FullbrightToggle.Position = UDim2.new(0.459999979, 0, 0.609696984, 0)
+FullbrightToggle.Size = UDim2.new(0.0799999982, 0, 0.0700000003, 0)
+
+UICorner_4.CornerRadius = UDim.new(0, 32)
+UICorner_4.Parent = FullbrightToggle
+
+TextButton.Parent = FullbrightToggle
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Size = UDim2.new(0.431818187, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = " "
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+UICorner_5.CornerRadius = UDim.new(0, 64)
+UICorner_5.Parent = TextButton
+
+O.Name = "O"
+O.Parent = FullbrightToggle
+O.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+O.BackgroundTransparency = 1.000
+O.Position = UDim2.new(0.419999987, 0, 0.100000001, 0)
+O.Size = UDim2.new(0, 27, 0, 22)
+O.ZIndex = 0
+O.Font = Enum.Font.Arial
+O.Text = "O"
+O.TextColor3 = Color3.fromRGB(135, 135, 135)
+O.TextScaled = true
+O.TextSize = 100.000
+O.TextWrapped = true
+
+I.Name = "I"
+I.Parent = FullbrightToggle
+I.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+I.BackgroundTransparency = 1.000
+I.Size = UDim2.new(0, 27, 0, 22)
+I.ZIndex = 0
+I.Font = Enum.Font.Arial
+I.Text = "I"
+I.TextColor3 = Color3.fromRGB(255, 255, 255)
+I.TextScaled = true
+I.TextSize = 100.000
+I.TextWrapped = true
+
+Button_3.Name = "Button"
+Button_3.Parent = MainFrame
+Button_3.AnchorPoint = Vector2.new(0.5, 0.5)
+Button_3.BackgroundColor3 = Color3.fromRGB(235, 235, 235)
+Button_3.BorderSizePixel = 0
+Button_3.ClipsDescendants = true
+Button_3.Position = UDim2.new(0.498116016, 0, 0.284095347, 0)
+Button_3.Size = UDim2.new(0.971000016, 0, 0.100000001, 0)
+Button_3.AutoButtonColor = false
+Button_3.Font = Enum.Font.Code
+Button_3.Text = "TOGGLE ANTI-RUSH (Can't disable!)"
+Button_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.TextSize = 25.000
+Button_3.TextStrokeTransparency = 0.000
+Button_3.TextWrapped = true
+Button_3.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = Button_3
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(57, 88, 112)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(146, 142, 255))}
+UIGradient_4.Rotation = -90
+UIGradient_4.Parent = Button_3
+
+ImageLabel_3.Parent = Button_3
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(0.930913448, 0, 0, 0)
+ImageLabel_3.Size = UDim2.new(0.0541636236, 0, 1, 0)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=284663799"
+
+Sample_3.Name = "Sample"
+Sample_3.Parent = Button_3
+Sample_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sample_3.BackgroundTransparency = 1.000
+Sample_3.Image = "http://www.roblox.com/asset/?id=4560909609"
+Sample_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+Sample_3.ImageTransparency = 0.600
+
+Window.Name = "Window"
+Window.Parent = MainFrame
+Window.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Window.Position = UDim2.new(0.000514648447, 0, -0.00255187997, 0)
+Window.Size = UDim2.new(1, 0, 0.150000006, 0)
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Window
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(7, 120, 181)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(5, 105, 255))}
+UIGradient_5.Rotation = -90
+UIGradient_5.Parent = Window
+
+AntiRush.Name = "Anti-Rush"
+AntiRush.Parent = Window
+AntiRush.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiRush.BackgroundTransparency = 1.000
+AntiRush.Size = UDim2.new(1, 0, 1, 0)
+AntiRush.Font = Enum.Font.Highway
+AntiRush.Text = "ANTI-RUSH"
+AntiRush.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiRush.TextSize = 45.000
+AntiRush.TextWrapped = true
+AntiRush.TextXAlignment = Enum.TextXAlignment.Left
+
+Hub.Name = "Hub"
+Hub.Parent = Window
+Hub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hub.BackgroundTransparency = 1.000
+Hub.Position = UDim2.new(0.377999991, 0, -0.200000003, 0)
+Hub.Size = UDim2.new(1, 0, 1, 0)
+Hub.Font = Enum.Font.Arial
+Hub.Text = "hub"
+Hub.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hub.TextSize = 20.000
+Hub.TextWrapped = true
+Hub.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function CDMBXN_fake_script() -- Button.Handler 
+	local script = Instance.new('LocalScript', Button)
+
+	local ms = game.Players.LocalPlayer:GetMouse()
+	
+	local btn = script.Parent
+	local sample = script.Parent:WaitForChild('Sample')
+	
+	btn.MouseButton1Click:Connect(function()
+		
+		--
+		local c = sample:Clone()
+		c.Parent = btn
+		local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+		c.Position = UDim2.new(0, x, 0, y)
+		local len, size = 0.35, nil
+		if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+			size = (btn.AbsoluteSize.X * 1.5)
+		else
+			size = (btn.AbsoluteSize.Y * 1.5)
+		end
+		c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+		for i = 1, 10 do
+			c.ImageTransparency = c.ImageTransparency + 0.05
+			wait(len / 12)
+			
+		end
+		c:Destroy()
+		
+	end)
+end
+coroutine.wrap(CDMBXN_fake_script)()
+local function KXDVH_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		workspace.CurrentRooms.ChildAdded:Connect(function(Room)
+			local ChaseStart = game.ReplicatedStorage.GameData.ChaseStart.Value
+			Room = tonumber(Room.Name)
+			if Room == ChaseStart then
+				Room = workspace.CurrentRooms[Room - 1]
+				Room.Door.ClientOpen:Destroy()
+				Room.Door.Hidden:Destroy()
+				Room.Door.Door.CanCollide = false
+				Room = workspace.CurrentRooms[tonumber(Room.Name) + 1]
+				repeat task.wait(0.25) until Room:FindFirstChild("LightFixture", true)
+				for _,Object in pairs(Room:GetDescendants()) do
+					local IsLight = Object:FindFirstAncestor("LightFixture") and (Object:IsA("PointLight") or Object:IsA("SpotLight"))
+					if IsLight then
+						Object.Enabled = true
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(KXDVH_fake_script)()
+local function NAIPR_fake_script() -- Button_2.Handler 
+	local script = Instance.new('LocalScript', Button_2)
+
+	local ms = game.Players.LocalPlayer:GetMouse()
+	
+	local btn = script.Parent
+	local sample = script.Parent:WaitForChild('Sample')
+	
+	btn.MouseButton1Click:Connect(function()
+		
+		--
+		local c = sample:Clone()
+		c.Parent = btn
+		local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+		c.Position = UDim2.new(0, x, 0, y)
+		local len, size = 0.35, nil
+		if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+			size = (btn.AbsoluteSize.X * 1.5)
+		else
+			size = (btn.AbsoluteSize.Y * 1.5)
+		end
+		c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+		for i = 1, 10 do
+			c.ImageTransparency = c.ImageTransparency + 0.05
+			wait(len / 12)
+			
+		end
+		c:Destroy()
+		
+	end)
+end
+coroutine.wrap(NAIPR_fake_script)()
+local function SDDORF_fake_script() -- Button_2.LocalScript 
+	local script = Instance.new('LocalScript', Button_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(SDDORF_fake_script)()
+local function LKXXBE_fake_script() -- MainFrame.DragScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	--Put this inside of your Frame and configure the speed if you would like.
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LKXXBE_fake_script)()
+local function WBIBN_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local TweenService = game:GetService("TweenService")
+	local Button = script.Parent
+	local Background = script.Parent.Parent
+	
+	local WhatIsIt = "Grey"
+	
+	local Info = TweenInfo.new(
+		0.3,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false,
+		0
+	)
+	
+	local ButtonTween = TweenService:Create(Button,Info,{Position = UDim2.new(0.568,0,0,0)})
+	local ReverseButton = TweenService:Create(Button,Info,{Position = UDim2.new(0,0,0,0)})
+	
+	local ColorTween = TweenService:Create(Background,Info,{BackgroundColor3 = Color3.fromRGB(0, 255, 0)})
+	local ReverseColor = TweenService:Create(Background,Info,{BackgroundColor3 = Color3.fromRGB(210, 210, 210)})
+	
+	Button.MouseButton1Click:Connect(function()
+		if WhatIsIt == "Grey" then
+			WhatIsIt = "Green"
+			ButtonTween:Play()
+			ColorTween:Play()
+			game.Lighting.Ambient = Color3.fromRGB(255, 255, 255)
+			game.Lighting.GlobalShadows = false
+		elseif WhatIsIt == "Green" then
+			WhatIsIt = "Grey"
+			ReverseButton:Play()
+			ReverseColor:Play()
+			game.Lighting.Ambient = Color3.fromRGB(0, 0, 0)
+			game.Lighting.GlobalShadows = true
+		end
+	end)
+end
+coroutine.wrap(WBIBN_fake_script)()
+local function EQORKXH_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if game.Lighting.Ambient == Color3.fromRGB(0, 0, 0) then
+			game.Lighting.Ambient = Color3.fromRGB(255, 255, 255)
+			game.Lighting.GlobalShadows = false
+		else
+			game.Lighting.Ambient = Color3.fromRGB(0, 0, 0)
+			game.Lighting.GlobalShadows = true
+	end
+	end)
+end
+coroutine.wrap(EQORKXH_fake_script)()
+local function ZIJQKXU_fake_script() -- Button_3.Handler 
+	local script = Instance.new('LocalScript', Button_3)
+
+	local ms = game.Players.LocalPlayer:GetMouse()
+	
+	local btn = script.Parent
+	local sample = script.Parent:WaitForChild('Sample')
+	
+	btn.MouseButton1Click:Connect(function()
+		
+		--
+		local c = sample:Clone()
+		c.Parent = btn
+		local x, y = (ms.X - c.AbsolutePosition.X), (ms.Y - c.AbsolutePosition.Y)
+		c.Position = UDim2.new(0, x, 0, y)
+		local len, size = 0.35, nil
+		if btn.AbsoluteSize.X >= btn.AbsoluteSize.Y then
+			size = (btn.AbsoluteSize.X * 1.5)
+		else
+			size = (btn.AbsoluteSize.Y * 1.5)
+		end
+		c:TweenSizeAndPosition(UDim2.new(0, size, 0, size), UDim2.new(0.5, (-size / 2), 0.5, (-size / 2)), 'Out', 'Quad', len, true, nil)
+		for i = 1, 10 do
+			c.ImageTransparency = c.ImageTransparency + 0.05
+			wait(len / 12)
+			
+		end
+		c:Destroy()
+		
+	end)
+end
+coroutine.wrap(ZIJQKXU_fake_script)()
+local function YIOQNV_fake_script() -- Button_3.LocalScript 
+	local script = Instance.new('LocalScript', Button_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		workspace.CurrentRooms.ChildAdded:Connect(function(Room)
+			local ChaseStart = game.ReplicatedStorage.GameData.ChaseStart.Value
+			Room = tonumber(Room.Name)
+			if Room == ChaseStart then
+				Room = workspace.CurrentRooms[Room - 1]
+				Room.Door.ClientOpen:Destroy()
+				Room.Door.Hidden:Destroy()
+				Room.Door.Door.CanCollide = false
+				Room = workspace.CurrentRooms[tonumber(Room.Name) + 1]
+				repeat task.wait(0.25) until Room:FindFirstChild("LightFixture", true)
+				for _,Object in pairs(Room:GetDescendants()) do
+					local IsLight = Object:FindFirstAncestor("LightFixture") and (Object:IsA("PointLight") or Object:IsA("SpotLight"))
+					if IsLight then
+						Object.Enabled = true
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(YIOQNV_fake_script)()
